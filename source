@@ -1,0 +1,682 @@
+local debugfinder = game.CoreGui:FindFirstChild("GoodBoi")
+if debugfinder then
+	debugfinder:Destroy()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "@SKEPPY0_0MAN:";
+		Text = "Did you just reexecute it?";
+		Icon = "";
+		Duration = math.huge; 
+		Button1 = "Yes Sir";
+	})
+end
+
+local Converted = {
+	["_GoodBoi"] = Instance.new("ScreenGui");
+	["_Toggle"] = Instance.new("TextButton");
+	["_UICorner"] = Instance.new("UICorner");
+	["_DropShadowHolder"] = Instance.new("Frame");
+	["_DropShadow"] = Instance.new("ImageLabel");
+	["_Main"] = Instance.new("Frame");
+	["_UICorner1"] = Instance.new("UICorner");
+	["_DropShadowHolder1"] = Instance.new("Frame");
+	["_DropShadow1"] = Instance.new("ImageLabel");
+	["_BottomBar"] = Instance.new("Frame");
+	["_UICorner2"] = Instance.new("UICorner");
+	["_Icon"] = Instance.new("ImageButton");
+	["_CloseGUI"] = Instance.new("LocalScript");
+	["_UICorner3"] = Instance.new("UICorner");
+	["_TitleAndCredit"] = Instance.new("TextLabel");
+	["_LocalScript"] = Instance.new("LocalScript");
+	["_LocalPlayer"] = Instance.new("ImageButton");
+	["_LocalPlayerCode"] = Instance.new("LocalScript");
+	["_UICorner4"] = Instance.new("UICorner");
+	["_Extension"] = Instance.new("Frame");
+	["_FrameOfMain"] = Instance.new("Frame");
+	["_UICorner5"] = Instance.new("UICorner");
+	["_Extra-SP"] = Instance.new("TextButton");
+	["_LocalScript1"] = Instance.new("LocalScript");
+	["_UIListLayout"] = Instance.new("UIListLayout");
+	["_TakeSheriff'sGun"] = Instance.new("TextButton");
+	["_LocalScript2"] = Instance.new("LocalScript");
+	["_Aimbot"] = Instance.new("TextButton");
+	["_LocalScript3"] = Instance.new("LocalScript");
+	["_UnboxCrates"] = Instance.new("TextButton");
+	["_LocalScript4"] = Instance.new("LocalScript");
+	["_CollectCoins"] = Instance.new("TextButton");
+	["_LocalScript5"] = Instance.new("LocalScript");
+	["_TeleportToLobby"] = Instance.new("TextButton");
+	["_LocalScript6"] = Instance.new("LocalScript");
+	["_ToggleCode"] = Instance.new("LocalScript");
+	["_UITextSizeConstraint"] = Instance.new("UITextSizeConstraint");
+	["_BlurRemover"] = Instance.new("LocalScript");
+}
+
+Converted["_GoodBoi"].IgnoreGuiInset = true
+Converted["_GoodBoi"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+Converted["_GoodBoi"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_GoodBoi"].Name = "GoodBoi"
+
+Converted["_Toggle"].Font = Enum.Font.Gotham
+Converted["_Toggle"].Text = "Restore Down"
+Converted["_Toggle"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Toggle"].TextScaled = true
+Converted["_Toggle"].TextSize = 14
+Converted["_Toggle"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Toggle"].TextWrapped = true
+Converted["_Toggle"].Active = false
+Converted["_Toggle"].AnchorPoint = Vector2.new(0.5, 1)
+Converted["_Toggle"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Converted["_Toggle"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Toggle"].BorderSizePixel = 0
+Converted["_Toggle"].Position = UDim2.new(0.5, 0, 1, -70)
+Converted["_Toggle"].Selectable = false
+Converted["_Toggle"].Size = UDim2.new(0, 100, 0, 50)
+Converted["_Toggle"].Name = "Toggle"
+Converted["_Toggle"].Parent = Converted["_GoodBoi"]
+
+Converted["_UICorner"].CornerRadius = UDim.new(0, 10)
+Converted["_UICorner"].Parent = Converted["_Toggle"]
+
+Converted["_DropShadowHolder"].BackgroundTransparency = 1
+Converted["_DropShadowHolder"].BorderSizePixel = 0
+Converted["_DropShadowHolder"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_DropShadowHolder"].ZIndex = 0
+Converted["_DropShadowHolder"].Name = "DropShadowHolder"
+Converted["_DropShadowHolder"].Parent = Converted["_Toggle"]
+
+Converted["_DropShadow"].Image = "rbxassetid://6014261993"
+Converted["_DropShadow"].ImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_DropShadow"].ImageTransparency = 0.5
+Converted["_DropShadow"].ScaleType = Enum.ScaleType.Slice
+Converted["_DropShadow"].SliceCenter = Rect.new(49, 49, 450, 450)
+Converted["_DropShadow"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_DropShadow"].BackgroundTransparency = 1
+Converted["_DropShadow"].BorderSizePixel = 0
+Converted["_DropShadow"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_DropShadow"].Size = UDim2.new(1, 47, 1, 47)
+Converted["_DropShadow"].ZIndex = 0
+Converted["_DropShadow"].Name = "DropShadow"
+Converted["_DropShadow"].Parent = Converted["_DropShadowHolder"]
+
+Converted["_Main"].AnchorPoint = Vector2.new(0.5, 1)
+Converted["_Main"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Converted["_Main"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Main"].BorderSizePixel = 0
+Converted["_Main"].Position = UDim2.new(0.5, 0, 0, -5)
+Converted["_Main"].Size = UDim2.new(0, 300, 0, 200)
+Converted["_Main"].Name = "Main"
+Converted["_Main"].Parent = Converted["_Toggle"]
+
+Converted["_UICorner1"].CornerRadius = UDim.new(0, 10)
+Converted["_UICorner1"].Parent = Converted["_Main"]
+
+Converted["_DropShadowHolder1"].BackgroundTransparency = 1
+Converted["_DropShadowHolder1"].BorderSizePixel = 0
+Converted["_DropShadowHolder1"].Size = UDim2.new(1, 0, 1, 0)
+Converted["_DropShadowHolder1"].ZIndex = 0
+Converted["_DropShadowHolder1"].Name = "DropShadowHolder"
+Converted["_DropShadowHolder1"].Parent = Converted["_Main"]
+
+Converted["_DropShadow1"].Image = "rbxassetid://6014261993"
+Converted["_DropShadow1"].ImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_DropShadow1"].ImageTransparency = 0.5
+Converted["_DropShadow1"].ScaleType = Enum.ScaleType.Slice
+Converted["_DropShadow1"].SliceCenter = Rect.new(49, 49, 450, 450)
+Converted["_DropShadow1"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_DropShadow1"].BackgroundTransparency = 1
+Converted["_DropShadow1"].BorderSizePixel = 0
+Converted["_DropShadow1"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_DropShadow1"].Size = UDim2.new(1, 47, 1, 47)
+Converted["_DropShadow1"].ZIndex = 0
+Converted["_DropShadow1"].Name = "DropShadow"
+Converted["_DropShadow1"].Parent = Converted["_DropShadowHolder1"]
+
+Converted["_BottomBar"].AnchorPoint = Vector2.new(1, 1)
+Converted["_BottomBar"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Converted["_BottomBar"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_BottomBar"].BorderSizePixel = 0
+Converted["_BottomBar"].Position = UDim2.new(1, 0, 1, 0)
+Converted["_BottomBar"].Size = UDim2.new(1, 0, 0, 30)
+Converted["_BottomBar"].ZIndex = 2
+Converted["_BottomBar"].Name = "BottomBar"
+Converted["_BottomBar"].Parent = Converted["_Main"]
+
+Converted["_UICorner2"].CornerRadius = UDim.new(0, 10)
+Converted["_UICorner2"].Parent = Converted["_BottomBar"]
+
+Converted["_Icon"].Image = "rbxassetid://8885423768"
+Converted["_Icon"].AutoButtonColor = false
+Converted["_Icon"].AnchorPoint = Vector2.new(0, 0.5)
+Converted["_Icon"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Converted["_Icon"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Icon"].BorderSizePixel = 0
+Converted["_Icon"].Position = UDim2.new(0, 3, 0.5, 0)
+Converted["_Icon"].Size = UDim2.new(0, 23, 0, 23)
+Converted["_Icon"].ZIndex = 3
+Converted["_Icon"].Name = "Icon"
+Converted["_Icon"].Parent = Converted["_BottomBar"]
+
+Converted["_UICorner3"].CornerRadius = UDim.new(0, 10)
+Converted["_UICorner3"].Parent = Converted["_Icon"]
+
+Converted["_TitleAndCredit"].Font = Enum.Font.Gotham
+Converted["_TitleAndCredit"].Text = "Nazi Mod"
+Converted["_TitleAndCredit"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TitleAndCredit"].TextSize = 14
+Converted["_TitleAndCredit"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_TitleAndCredit"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TitleAndCredit"].BackgroundTransparency = 1
+Converted["_TitleAndCredit"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TitleAndCredit"].BorderSizePixel = 0
+Converted["_TitleAndCredit"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_TitleAndCredit"].Size = UDim2.new(0, 200, 1, 0)
+Converted["_TitleAndCredit"].Name = "TitleAndCredit"
+Converted["_TitleAndCredit"].Parent = Converted["_BottomBar"]
+
+Converted["_LocalPlayer"].Image = "http://www.roblox.com/asset/?id=6031280883"
+Converted["_LocalPlayer"].AnchorPoint = Vector2.new(1, 0.5)
+Converted["_LocalPlayer"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Converted["_LocalPlayer"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_LocalPlayer"].BorderSizePixel = 0
+Converted["_LocalPlayer"].Position = UDim2.new(1, -3, 0.5, 0)
+Converted["_LocalPlayer"].Size = UDim2.new(0, 23, 0, 23)
+Converted["_LocalPlayer"].ZIndex = 3
+Converted["_LocalPlayer"].Name = "LocalPlayer"
+Converted["_LocalPlayer"].Parent = Converted["_BottomBar"]
+
+Converted["_UICorner4"].CornerRadius = UDim.new(0, 10)
+Converted["_UICorner4"].Parent = Converted["_LocalPlayer"]
+
+Converted["_Extension"].AnchorPoint = Vector2.new(1, 1)
+Converted["_Extension"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Converted["_Extension"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Extension"].BorderSizePixel = 0
+Converted["_Extension"].Position = UDim2.new(1, 0, 1, -15)
+Converted["_Extension"].Size = UDim2.new(1, 0, 0, 15)
+Converted["_Extension"].Name = "Extension"
+Converted["_Extension"].Parent = Converted["_Main"]
+
+Converted["_FrameOfMain"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_FrameOfMain"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_FrameOfMain"].BackgroundTransparency = 1
+Converted["_FrameOfMain"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_FrameOfMain"].BorderSizePixel = 0
+Converted["_FrameOfMain"].ClipsDescendants = true
+Converted["_FrameOfMain"].Position = UDim2.new(0.5, 0, 0.5, -15)
+Converted["_FrameOfMain"].Size = UDim2.new(1, 0, 1, -30)
+Converted["_FrameOfMain"].Name = "FrameOfMain"
+Converted["_FrameOfMain"].Parent = Converted["_Main"]
+
+Converted["_UICorner5"].CornerRadius = UDim.new(0, 10)
+Converted["_UICorner5"].Parent = Converted["_FrameOfMain"]
+
+Converted["_Extra-SP"].Font = Enum.Font.Gotham
+Converted["_Extra-SP"].Text = "Extra-SP"
+Converted["_Extra-SP"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Extra-SP"].TextSize = 14
+Converted["_Extra-SP"].Style = Enum.ButtonStyle.RobloxButton
+Converted["_Extra-SP"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Extra-SP"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Extra-SP"].BorderSizePixel = 0
+Converted["_Extra-SP"].Size = UDim2.new(0, 150, 0, 55)
+Converted["_Extra-SP"].Name = "Extra-SP"
+Converted["_Extra-SP"].Parent = Converted["_FrameOfMain"]
+
+Converted["_UIListLayout"].Padding = UDim.new(0, 2)
+Converted["_UIListLayout"].Wraps = true
+Converted["_UIListLayout"].Parent = Converted["_FrameOfMain"]
+
+Converted["_TakeSheriff'sGun"].Font = Enum.Font.Gotham
+Converted["_TakeSheriff'sGun"].Text = "Take Sheriff's Gun"
+Converted["_TakeSheriff'sGun"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TakeSheriff'sGun"].TextSize = 14
+Converted["_TakeSheriff'sGun"].Style = Enum.ButtonStyle.RobloxButton
+Converted["_TakeSheriff'sGun"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TakeSheriff'sGun"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TakeSheriff'sGun"].BorderSizePixel = 0
+Converted["_TakeSheriff'sGun"].Size = UDim2.new(0, 150, 0, 55)
+Converted["_TakeSheriff'sGun"].Name = "TakeSheriff'sGun"
+Converted["_TakeSheriff'sGun"].Parent = Converted["_FrameOfMain"]
+
+Converted["_Aimbot"].Font = Enum.Font.Gotham
+Converted["_Aimbot"].Text = "Aimbot"
+Converted["_Aimbot"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Aimbot"].TextSize = 14
+Converted["_Aimbot"].Style = Enum.ButtonStyle.RobloxButton
+Converted["_Aimbot"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Aimbot"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Aimbot"].BorderSizePixel = 0
+Converted["_Aimbot"].Size = UDim2.new(0, 150, 0, 55)
+Converted["_Aimbot"].Name = "Aimbot"
+Converted["_Aimbot"].Parent = Converted["_FrameOfMain"]
+
+Converted["_UnboxCrates"].Font = Enum.Font.Gotham
+Converted["_UnboxCrates"].Text = "Unbox Crates"
+Converted["_UnboxCrates"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UnboxCrates"].TextSize = 14
+Converted["_UnboxCrates"].Style = Enum.ButtonStyle.RobloxButton
+Converted["_UnboxCrates"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_UnboxCrates"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_UnboxCrates"].BorderSizePixel = 0
+Converted["_UnboxCrates"].Size = UDim2.new(0, 150, 0, 55)
+Converted["_UnboxCrates"].Name = "UnboxCrates"
+Converted["_UnboxCrates"].Parent = Converted["_FrameOfMain"]
+
+Converted["_CollectCoins"].Font = Enum.Font.Gotham
+Converted["_CollectCoins"].Text = "Collect Coins"
+Converted["_CollectCoins"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_CollectCoins"].TextSize = 14
+Converted["_CollectCoins"].Style = Enum.ButtonStyle.RobloxButton
+Converted["_CollectCoins"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_CollectCoins"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_CollectCoins"].BorderSizePixel = 0
+Converted["_CollectCoins"].Size = UDim2.new(0, 150, 0, 55)
+Converted["_CollectCoins"].Name = "CollectCoins"
+Converted["_CollectCoins"].Parent = Converted["_FrameOfMain"]
+
+Converted["_TeleportToLobby"].Font = Enum.Font.Gotham
+Converted["_TeleportToLobby"].Text = "Teleport to Lobby"
+Converted["_TeleportToLobby"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TeleportToLobby"].TextSize = 14
+Converted["_TeleportToLobby"].Style = Enum.ButtonStyle.RobloxButton
+Converted["_TeleportToLobby"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TeleportToLobby"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TeleportToLobby"].BorderSizePixel = 0
+Converted["_TeleportToLobby"].Size = UDim2.new(0, 150, 0, 55)
+Converted["_TeleportToLobby"].Name = "TeleportToLobby"
+Converted["_TeleportToLobby"].Parent = Converted["_FrameOfMain"]
+
+Converted["_UITextSizeConstraint"].MaxTextSize = 14
+Converted["_UITextSizeConstraint"].Parent = Converted["_Toggle"]
+
+Converted["_GoodBoi"].Parent = game.CoreGui
+
+local fake_module_scripts = {}
+
+local function ZOBE_fake_script() -- Fake Script: Workspace.GoodBoi.Toggle.Main.BottomBar.Icon.CloseGUI
+    local script = Instance.new("LocalScript")
+    script.Name = "CloseGUI"
+    script.Parent = Converted["_Icon"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local lastClickTime = 0
+	local doubleClickInterval = 0.5
+	
+	local function onClick()
+		local currentTime = tick()
+		local timeSinceLastClick = currentTime - lastClickTime
+		lastClickTime = currentTime
+	
+		if timeSinceLastClick <= doubleClickInterval then
+			print("Double-click detected!, closing GUI...")
+			wait(math.random() * 5)
+			script.Parent.Parent.Parent.Parent.Parent:Destroy()
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(onClick)
+	
+	
+	
+end
+local function BTKTL_fake_script() -- Fake Script: Workspace.GoodBoi.Toggle.Main.BottomBar.TitleAndCredit.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_TitleAndCredit"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local sc = script.Parent
+	while true do
+		task.wait(5)
+	
+		sc.Text = "Made by @SKEPPY0_0MAN"
+	
+		task.wait(5)
+	
+		sc.Text = "Nazi Mod"
+	end
+end
+local function TWTFHFD_fake_script() -- Fake Script: Workspace.GoodBoi.Toggle.Main.BottomBar.LocalPlayer.LocalPlayerCode
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalPlayerCode"
+    script.Parent = Converted["_LocalPlayer"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+	end)
+end
+local function UKNZQIF_fake_script() -- Fake Script: Workspace.GoodBoi.Toggle.Main.FrameOfMain.Extra-SP.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Extra-SP"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local function createESPMurd(plr)
+		if plr.Character then
+			for _, part in pairs(plr.Character:GetChildren()) do
+				if part:IsA("BasePart") then
+					local highlight = Instance.new("Highlight")
+					highlight.Parent = part
+					highlight.Adornee = part
+					highlight.FillColor = Color3.fromRGB(255, 0, 0)
+					highlight.FillTransparency = 0.5
+				end
+			end
+		end
+	end
+	
+	local function createESPSher(plr)
+		if plr.Character then
+			for _, part in pairs(plr.Character:GetChildren()) do
+				if part:IsA("BasePart") then
+					local highlight = Instance.new("Highlight")
+					highlight.Parent = part
+					highlight.Adornee = part
+					highlight.FillColor = Color3.fromRGB(0, 0, 255)
+					highlight.FillTransparency = 0.5
+				end
+			end
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		for _, player in pairs(game.Players:GetPlayers()) do
+			for _, tool in pairs(player.Backpack:GetChildren()) do
+				if tool:IsA('Tool') then
+					if tool.Name == "Knife" then
+						createESPMurd(player)
+					elseif tool.Name == "Revolver" then
+						createESPSher(player)
+					end
+				end
+			end
+		end
+	end)
+end
+local function ZRJU_fake_script() -- Fake Script: Workspace.GoodBoi.Toggle.Main.FrameOfMain.TakeSheriff'sGun.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_TakeSheriff'sGun"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for x, y in pairs(workspace:GetDescendants()) do
+			if y and y.Name == "TouchInterest" and y.Parent.Name == "Orb" and y.Parent.Parent.Name == "RevolverPickUp" then
+				if firetouchinterest then
+					firetouchinterest(game.Players.LocalPlayer.Character.Head, y, 0)
+				else
+					print("Missing firetouchinterest BRO")
+					return
+				end
+			end
+		end
+	end)
+end
+local function KWYRTI_fake_script() -- Fake Script: Workspace.GoodBoi.Toggle.Main.FrameOfMain.Aimbot.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Aimbot"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local fov = 40
+		local maxTransparency = 0.1
+		local RunService = game:GetService("RunService")
+		local UserInputService = game:GetService("UserInputService")
+		local Players = game:GetService("Players")
+		local Cam = game.Workspace.CurrentCamera
+	
+		local FOVring = Drawing.new("Circle")
+		FOVring.Visible = true
+		FOVring.Thickness = 2
+		FOVring.Color = Color3.fromRGB(128, 0, 128)
+		FOVring.Filled = false
+		FOVring.Radius = fov
+		FOVring.Position = Cam.ViewportSize / 2
+	
+		local function updateDrawings()
+			local camViewportSize = Cam.ViewportSize
+			FOVring.Position = camViewportSize / 2
+		end
+	
+		local function onKeyDown(input)
+			if input.KeyCode == Enum.KeyCode.Delete then
+				RunService:UnbindFromRenderStep("FOVUpdate")
+				FOVring:Remove()
+			end
+		end
+	
+		UserInputService.InputBegan:Connect(onKeyDown)
+	
+		local function lookAt(target)
+			local lookVector = (target - Cam.CFrame.Position).unit
+			local newCFrame = CFrame.new(Cam.CFrame.Position, Cam.CFrame.Position + lookVector)
+			Cam.CFrame = newCFrame
+		end
+	
+		local function calculateTransparency(distance)
+			local transparency = (1 - (distance / maxDistance)) * maxTransparency
+			return transparency
+		end
+	
+		local function getClosestPlayerInFOV(trg_part)
+			local nearest = nil
+			local last = math.huge
+			local playerMousePos = Cam.ViewportSize / 2
+	
+			for _, player in ipairs(Players:GetPlayers()) do
+				if player ~= Players.LocalPlayer then
+					local part = player.Character and player.Character:FindFirstChild(trg_part)
+					if part then
+						local ePos, isVisible = Cam:WorldToViewportPoint(part.Position)
+						local distance = (Vector2.new(ePos.x, ePos.y) - playerMousePos).Magnitude
+	
+						if distance < last and isVisible and distance < fov then
+							last = distance
+							nearest = player
+						end
+					end
+				end
+			end
+	
+			return nearest
+		end
+	
+		RunService.RenderStepped:Connect(function()
+			updateDrawings()
+			local closest = getClosestPlayerInFOV("Head")
+			if closest and closest.Character:FindFirstChild("Head") then
+				lookAt(closest.Character.Head.Position)
+			end
+	
+			if closest then
+				local ePos, isVisible = Cam:WorldToViewportPoint(closest.Character.Head.Position)
+				local distance = (Vector2.new(ePos.x, ePos.y) - (Cam.ViewportSize / 2)).Magnitude
+				FOVring.Transparency = calculateTransparency(distance)
+			else
+				FOVring.Transparency = 0.1
+			end
+		end)
+	end)
+end
+local function YPMP_fake_script() -- Fake Script: Workspace.GoodBoi.Toggle.Main.FrameOfMain.UnboxCrates.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UnboxCrates"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local char = game.Players.LocalPlayer.Character
+		repeat
+			local args = {
+				[1] = game.ReplicatedStorage:WaitForChild("ShopEntries"):WaitForChild("RevolverSkins"):WaitForChild("Revolver Box #1"),
+				[2] = game.ReplicatedStorage:WaitForChild("ShopEntries"):WaitForChild("RevolverSkins"):WaitForChild("Revolver Box #2"),
+				[3] = game.ReplicatedStorage:WaitForChild("ShopEntries"):WaitForChild("RevolverSkins"):WaitForChild("Revolver Box #3"),
+				[4] = game.ReplicatedStorage:WaitForChild("ShopEntries"):WaitForChild("RevolverSkins"):WaitForChild("Revolver Box #4"),
+				[5] = game.ReplicatedStorage:WaitForChild("ShopEntries"):WaitForChild("KnifeSkins"):WaitForChild("Knife Box #1"),
+				[6] = game.ReplicatedStorage:WaitForChild("ShopEntries"):WaitForChild("KnifeSkins"):WaitForChild("Knife Box #2"),
+				[7] = game.ReplicatedStorage:WaitForChild("ShopEntries"):WaitForChild("KnifeSkins"):WaitForChild("Knife Box #3"),
+				[8] = game.ReplicatedStorage:WaitForChild("ShopEntries"):WaitForChild("KnifeSkins"):WaitForChild("Knife Box #4")
+			}
+	
+			game.ReplicatedStorage:WaitForChild("Interactions"):WaitForChild("Server"):WaitForChild("BuyShopItem"):InvokeServer(unpack(args))
+		until char.Humanoid.Health == 0
+	end)
+end
+local function EYYMYL_fake_script() -- Fake Script: Workspace.GoodBoi.Toggle.Main.FrameOfMain.CollectCoins.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_CollectCoins"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local char = game.Players.LocalPlayer.Character
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		repeat
+			for x, y in pairs(workspace:GetDescendants()) do
+				if y:IsA('Part') and y.Name == "Coin" then
+					char.HumanoidRootPart.CFrame = y.CFrame
+				end
+			end
+			wait()
+		until char.Humanoid.Health == 0
+	end)
+	
+end
+local function UEJIC_fake_script() -- Fake Script: Workspace.GoodBoi.Toggle.Main.FrameOfMain.TeleportToLobby.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_TeleportToLobby"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local SpawnLocate = game:GetService("Workspace").Lobby.Spawns.Model:FindFirstChild("SpawnLocation")
+		local char = game.Players.LocalPlayer.Character
+	
+		char.HumanoidRootPart.CFrame = SpawnLocate.CFrame
+	end)
+end
+local function ABVTHYD_fake_script() -- Fake Script: Workspace.GoodBoi.Toggle.ToggleCode
+    local script = Instance.new("LocalScript")
+    script.Name = "ToggleCode"
+    script.Parent = Converted["_Toggle"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local enabled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		enabled = not enabled
+		
+		if enabled then
+			script.Parent.Main.Visible = false
+		else
+			script.Parent.Main.Visible = true
+		end
+	end)
+end
+local function YFWLWWZ_fake_script() -- Fake Script: Workspace.GoodBoi.Toggle.BlurRemover
+    local script = Instance.new("LocalScript")
+    script.Name = "BlurRemover"
+    script.Parent = Converted["_Toggle"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	while true do
+		task.wait()
+		for FUCKUPFUCKUPFUCKUPFUCKUPFUCKUPFUCKUPFUCKUPFUCKUPFUCKUPFUCKUPFUCKUP, NIGGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA in pairs(game.Lighting:GetDescendants()) do
+			if NIGGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA:IsA("BlurEffect") then
+				NIGGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA:Destroy()
+			end
+		end
+	end
+end
+
+coroutine.wrap(ZOBE_fake_script)()
+coroutine.wrap(BTKTL_fake_script)()
+coroutine.wrap(TWTFHFD_fake_script)()
+coroutine.wrap(UKNZQIF_fake_script)()
+coroutine.wrap(ZRJU_fake_script)()
+coroutine.wrap(KWYRTI_fake_script)()
+coroutine.wrap(YPMP_fake_script)()
+coroutine.wrap(EYYMYL_fake_script)()
+coroutine.wrap(UEJIC_fake_script)()
+coroutine.wrap(ABVTHYD_fake_script)()
+coroutine.wrap(YFWLWWZ_fake_script)()
